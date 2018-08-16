@@ -11,7 +11,7 @@ Utility to access the EAGLE public database using python. Based on the [original
    - `cd` to directory with [`setup.py`](https://github.com/kyleaoman/eagleSqlTools/blob/master/setup.py)
    - ensure `~/lib/python3.6/site-packages` or similar is on your `PYTHONPATH` (e.g. `echo $PYTHONPATH`), if not, add it (perhaps in `.bash_profile` or similar)
    - run `pip install --prefix ~ -e .` (`-e` installs via symlink, so pulling repository will do a 'live' update of the installation)
- - cd to a directory outside the module and launch `python`; you should be able to do `import eagleSqlTools'`
+ - cd to a directory outside the module and launch `python`; you should be able to do `import eagleSqlTools`
  
  ## Usage:
 
