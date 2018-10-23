@@ -60,9 +60,10 @@ class _WebDBConnection:
 
     def _execute_query(self, sql):
         """Run an SQL query and return the result as a record array"""
-        url = self.db_url + "?" + urlencode({'action': 'doQuery', 'SQL': sql})
+        data = urlencode({'action':'doQuery', 'queryMode':'stream', 'SQL':sql,})
+        url = self.db_url + "/MyDB"
         install_opener(build_opener(self.auth_handler, self.cookie_handler))
-        response = urlopen(url)
+        response = urlopen(url, data=data)
         cookie_jar.save(ignore_discard=True)
 
         # Check for OK response
