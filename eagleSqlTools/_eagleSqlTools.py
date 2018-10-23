@@ -63,7 +63,7 @@ class _WebDBConnection:
         data = urlencode({'action':'doQuery', 'queryMode':'stream', 'SQL':sql,})
         url = self.db_url + "/MyDB"
         install_opener(build_opener(self.auth_handler, self.cookie_handler))
-        response = urlopen(url, data=data)
+        response = urlopen(url, data=data.encode('utf-8'))
         cookie_jar.save(ignore_discard=True)
 
         # Check for OK response
