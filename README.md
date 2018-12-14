@@ -6,6 +6,7 @@ Utility to access the EAGLE public database using python. Based on the [original
 ### From PyPI:
 
  - Simply run `pip install eaglesqltools`.
+ - Launch `python`; you should be able to do `import eagleSqlTools`.
 
 ### From github:
 
