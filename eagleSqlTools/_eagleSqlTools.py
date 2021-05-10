@@ -50,7 +50,7 @@ class _WebDBConnection:
         if password is None:
             password = getpass()
         # Get URL for the database
-        self.db_url = "http://galaxy-catalogue.dur.ac.uk:8080/Eagle"
+        self.db_url = "http://virgodb.dur.ac.uk:8080/Eagle/"
         # Set up authentication and cookies
         self.password_mgr = HTTPPasswordMgrWithDefaultRealm()
         self.password_mgr.add_password(None, self.db_url, username, password)
