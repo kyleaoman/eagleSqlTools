@@ -97,7 +97,7 @@ class _WebDBConnection:
                 if m is not None:
                     columns.append(m.groups())
                 else:
-                    raise Exception("Don't understand column info: "+line.decode("utf-8"))
+                    raise Exception("Don't understand column info: " + line.decode())
 
         # Construct record type for the output
         types = [numpy_dtype[col[3]] for col in columns]
