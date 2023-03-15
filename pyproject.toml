@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eaglesqltools"
+version = "2.0.0"
+authors = [
+  { name="Kyle Oman", email="kyle.a.oman@durham.ac.uk" },
+]
+description = "Utilities for accessing EAGLE public database."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = ["numpy"]
+
+[project.urls]
+"Homepage" = "https://github.com/kyleaoman/eagleSqlTools"
+"Bug Tracker" = "https://github.com/kyleaoman/eagleSqlTools/issues"
